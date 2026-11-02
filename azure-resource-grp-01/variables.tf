@@ -4,13 +4,6 @@
 variable "subscription_id" {
   description = "The subscription ID to use for the Azure provider."
   type        = string
-  nullable    = false
-
-  # Reject an empty subscription ID before provider initialization.
-  validation {
-    condition     = length(var.subscription_id) > 0
-    error_message = "The subscription ID must not be empty."
-  }
 }
 
 # Resource group name; override the default in terraform.tfvars if needed.
