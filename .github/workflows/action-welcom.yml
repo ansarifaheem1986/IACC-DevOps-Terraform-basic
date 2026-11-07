@@ -1,0 +1,12 @@
+name: Welcome Message
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  display-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display welcome message
+        run: echo "WELCOME TO DEVOPS BOOT CAMP"
