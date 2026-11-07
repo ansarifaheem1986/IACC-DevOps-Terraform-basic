@@ -10,7 +10,7 @@ variable "subscription_id" {
 variable "resource_group_name" {
   description = "The name of the resource group to create."
   type        = string
-  default     = "devops-iacc-terraform-sp-rg-01"
+  default     = "devops-iacc-terraform-sp-rg-03"
   nullable    = false
 
   # Resource group names must be provided as non-empty strings.
