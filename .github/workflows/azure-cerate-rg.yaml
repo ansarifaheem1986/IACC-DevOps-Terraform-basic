@@ -37,4 +37,6 @@ jobs:
         shell: bash
         env:
           AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-        run: bash scripts/create-resource-group.sh
+        run:
+          chmod +x .github/scripts/create-resource-group.sh  
+          bash .github/scripts/create-resource-group.sh
